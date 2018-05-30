@@ -19,8 +19,8 @@
 <body>
 <script src="d3.min.js"></script>
 <script>
-var width = 1280,
-    height = 620
+var width = 600,//1280,
+    height = 600;
 
 var fill=d3.scale.category10();
 
@@ -30,8 +30,8 @@ var svg = d3.select("body").append("svg")
 
 var force = d3.layout.force()
     .gravity(0.05)
-    .distance(100)
-    .charge(-1000)
+    .distance(80)
+    .charge(-400)
     .size([width, height]);
 
 _setArrow(svg);
